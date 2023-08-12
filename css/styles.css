@@ -1,0 +1,149 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat7display=swap');
+
+ body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+ }
+
+ /*
+================Menu===============
+ */
+
+ #menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+ }
+
+ #menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+/*
+================Sliders===============
+ */
+
+ .carousel-inner {
+    max-height: 39rem;
+ }
+
+ /*
+================formularios===============
+ */
+
+ 
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+	color: #dc3545;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+ 
+.formulario__mensaje {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+	color: white;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+	color: #119200;
+}
+
+/* Estilos para Validacion */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+/*
+================Media Queries Pantalla===============
+ */
+
+ /*
+================Medium===============
+ */
+ @media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+ }
+
+ /*
+================Small===============
+ */
+
+ @media (max-width:576px) {
+
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+ }
